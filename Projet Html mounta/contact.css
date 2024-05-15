@@ -1,0 +1,299 @@
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("back.jpg")no-repeat;
+}
+
+header{
+  background: #333;
+  color: #fff;
+  
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+footer{
+  display: flex;
+
+
+  background-color: #333;
+  color: #fff;
+  
+}
+header {
+  top: 0;
+}
+
+
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  width: 100px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #e8491d;
+  background: #4d4d4d;
+  border-radius: 5px;
+
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.course-slider {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.box {
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px auto;
+ 
+}
+
+
+.shop-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  border-radius: 30px;
+}
+
+.item {
+  margin: 20px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  border: 4px solid #4d4d4d;
+  border-style:double;
+  
+}
+
+.item img {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+
+.shop-button, .shop-items button {  
+  padding: 8px 18px;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  border-radius: 6px;
+  transition:  0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4d4d4d;
+  margin-top: 5px;
+  border-radius: 5px;
+  min-width: 2px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+#contact-form {
+  max-width: 30%;
+  margin: 20px auto; 
+  padding: 2rem; 
+  background: rgb(218, 100, 218);
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#contact-form label { 
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: calc(100% - 1.5rem); 
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+}
+
+#contact-form button {
+  width: auto; 
+  padding: 1rem 2rem; 
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease; 
+}
+
+#contact-form button:hover {
+  background: #e8491d;
+}
+
+
+
+
+.star-rating {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1rem 0; 
+}
+
+.star-rating .star {
+  color: #ddd; 
+  transition: color 0.3s ease; 
+}
+
+.star-rating .star.rated {
+  color: #ffc700; 
+}
+
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+}
+
+.star-rating .star {
+  font-size: 24px;
+  color: #d3d3d3;
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+  color: #ffc107;
+}
+
+.star-rating .star.active {
+  color: #ffc107;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

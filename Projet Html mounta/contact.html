@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Jersey store</title>
+  <link rel="stylesheet" href="contact.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li class="dropdown"  style="width: 100px;">
+            <a href="#" >jerseys</a>
+            <div class="dropdown-content" >
+              <a href="milan.html">MILAN</a>
+              <a href="barca.html">BARCA</a>
+              <a href="real.html">REAL </a>
+              <a href="mancity.html">MAN CITY </a>
+              <a href="arsenal.html">ARSENAL </a>
+            </div>
+          </li>
+        <li ><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">logout</a></li>
+      </ul>
+    </nav>
+</header>
+  <main >
+    <h1 style="color: white; margin-top: 45px;">Contact Information</h1>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <div class="star-rating">
+        <label for="Rate_us">Rate us :</label>
+        <span class="star" onclick="setRating(1)">☆</span>
+        <span class="star" onclick="setRating(2)">☆</span>
+        <span class="star" onclick="setRating(3)">☆</span>
+        <span class="star" onclick="setRating(4)">☆</span>
+        <span class="star" onclick="setRating(5)">☆</span>
+      </div>
+      
+      <button type="submit">Send Message</button>
+    </form>
+    <div style="margin-bottom: 50px;"></div>
+  </main>
+  
+  <footer>
+    <p style="margin-left: 43%;"></div>© 2024 Educational Profile</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
